@@ -22,7 +22,9 @@ The library is extracted from the source code for Google's Chromium library at
 http://src.chromium.org/svn/trunk/src/third_party/cld
 
 The extracted version is based on the version extracted by Mike McCandless:
+
 http://code.google.com/p/chromium-compact-language-detector/
+
 http://blog.mikemccandless.com/2011/10/language-detection-with-googles-compact.html
 
 The LICENSE is the same as Chromium's LICENSE (which is used in the extracted version as well).
