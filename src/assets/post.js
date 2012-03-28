@@ -1,0 +1,2 @@
+return _detectLanguage;
+})();
