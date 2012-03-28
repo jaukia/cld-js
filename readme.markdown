@@ -37,12 +37,13 @@ Building
 
 2. Install uglify.js by running:
 
-    npm uglify-js
+        npm uglify-js
 
 3. Run:
-    cd src
-    sh build.sh
-    node minify.js
+
+        cd src
+        sh build.sh
+        node minify.js
 
 What was done
 -------------
@@ -50,6 +51,7 @@ What was done
 Main parts for getting the library to port to javascript:
 
 * The extracted source code of the library was first taken from:
+
 http://src.chromium.org/svn/trunk/src/third_party/cld
 
 * _"src/cldapp.cc"_ was made based on the _"example.cc"_
