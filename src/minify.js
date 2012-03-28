@@ -113,4 +113,4 @@ function compactify(content) {
     return content;
 }
 
-minifyFile("../build/cld.js", "../build/cld-min.js");
+minifyFile("../cld.js", "../cld-min.js");

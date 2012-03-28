@@ -46,10 +46,11 @@ echo "Compile cldapp.cc"
 
 #$CC -s USE_TYPED_ARRAYS=2 -O2 --closure 0 -DCLD_WINDOWS -I. $LDFLAGS -o ../build/cld.js cldapp.cc -lcld -lstdc++ --pre-js assets/pre.js --post-js assets/post.js
 
-$CC -s USE_TYPED_ARRAYS=2 -DCLD_WINDOWS -I. $LDFLAGS -o ../build/cld.js cldapp.cc -lcld -lstdc++ --pre-js assets/pre.js --post-js assets/post.js
+$CC -s USE_TYPED_ARRAYS=2 -DCLD_WINDOWS -I. $LDFLAGS -o ../cld.js cldapp.cc -lcld -lstdc++ --pre-js assets/pre.js --post-js assets/post.js
 
 rm *.o
 rm libcld.a
+rm a.out
 
 echo
 echo "Done!"

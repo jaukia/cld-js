@@ -15,6 +15,18 @@ To see an example:
 
 Note that the porting may have caused degradation in the language detection! The library has not been much tested!
 
+Origins and license
+-------------------
+
+The library is extracted from the source code for Google's Chromium library at
+http://src.chromium.org/svn/trunk/src/third_party/cld
+
+The extracted version is based on the version extracted by Mike McCandless:
+http://code.google.com/p/chromium-compact-language-detector/
+http://blog.mikemccandless.com/2011/10/language-detection-with-googles-compact.html
+
+The LICENSE is the same as Chromium's LICENSE (which is used in the extracted version as well).
+
 Building
 --------
 
@@ -55,14 +67,3 @@ Ideas for further work
 * Use the library for something
 
 * Create tests or port the original ones from Chromium
-
-Origins and license
--------------------
-
-The library is extracted from the source code for Google's Chromium library at
-http://src.chromium.org/svn/trunk/src/third_party/cld
-
-The extracted version is based on:
-http://code.google.com/p/chromium-compact-language-detector/
-
-The LICENSE is the same as Chromium's LICENSE (which is used in the extracted version as well).
