@@ -1,7 +1,7 @@
 cld.js
 ======
 
-A javascript port of the compact language detector, originally from Chromium.
+Detect the langugage of any piece of text: the text goes in and the language of it comes out. This is a javascript port of the Compact Language Detector from Chromium.
 
 Compactness is relative: cld.js is 1 MB minified and gzipped, 3 MB just minified and 9.6 MB in its original form.
 
