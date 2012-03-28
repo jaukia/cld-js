@@ -18,7 +18,8 @@ Note that the porting may have caused degradation in the language detection! The
 Origins and license
 -------------------
 
-The library is extracted from the source code for Google's Chromium library at
+The library is extracted from the source code for Google's Chromium library:
+
 http://src.chromium.org/svn/trunk/src/third_party/cld
 
 The extracted version is based on the version extracted by Mike McCandless:
