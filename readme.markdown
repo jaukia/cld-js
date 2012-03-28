@@ -1,19 +1,19 @@
 cld.js
 ======
 
-Detect the langugage of any piece of text: the text goes in and a language comes out. This is a javascript port of the Compact Language Detector from Chromium.
+Detect the langugage of any piece of text &mdash; the text goes in and a language comes out. This is a Javascript port of the Compact Language Detector from Chromium.
 
 Compactness is relative: cld.js is 1 MB minified and gzipped, 3 MB just minified and 9.6 MB in its original form.
 
-Cld.js provides function detectLangugage(text) which returns the name of the language of the text.
+Cld.js provides function _detectLangugage(text)_ which returns the name of the language of the text.
 
 To see an example:
 
-* In a browser, open "demo.html". For now, works only in Chrome and Firefox.
+* In a browser, open _"demo.html"_. For now, works only in Chrome and Firefox.
 
-* On Node.js, run "node demo-node.js".
+* On Node.js, run _"node demo-node.js"_.
 
-Note that the porting may have caused degradation in the language detection! The library has not been much tested!
+Note that the porting may have caused degradation in the language detection! The library has not been much tested.
 
 Origins and license
 -------------------
@@ -33,14 +33,16 @@ The LICENSE is the same as Chromium's LICENSE (which is used in the extracted ve
 Building
 --------
 
-Put Emscripten (or a link to it) into the folder "emscripten" and install all its requirements.
+1. Put Emscripten (or a link to it) into the folder _"emscripten"_ and install all its requirements.
 
-Install uglify.js by running "npm uglify-js"
+2. Install uglify.js by running:
 
-Run:
-cd src
-sh build.sh
-node minify.js
+    npm uglify-js
+
+3. Run:
+    cd src
+    sh build.sh
+    node minify.js
 
 What was done
 -------------
@@ -50,13 +52,13 @@ Main parts for getting the library to port to javascript:
 * The extracted source code of the library was first taken from:
 http://src.chromium.org/svn/trunk/src/third_party/cld
 
-* "src/cldapp.cc" was made based on the "example.cc"
+* _"src/cldapp.cc"_ was made based on the _"example.cc"_
 
-* "src/build.sh" was tuned to use Emscripten
+* _"src/build.sh"_ was tuned to use Emscripten
 
-* "src/base/build_config.h" was tuned to hard-code os and architecture defines
+* _"src/base/build_config.h"_ was tuned to hard-code os and architecture defines
 
-* "src/minify.js" and "src/assets/*.js" were added to compress the file, wrap it in a function and clean the code 
+* _"src/minify.js"_ and _"src/assets/*.js"_ were added to compress the file, wrap it in a function and clean the code 
 
 Ideas for further work
 ----------------------
